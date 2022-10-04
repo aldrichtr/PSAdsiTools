@@ -30,9 +30,9 @@ function Search-ADSI {
         [ADSISearcher]$Connection
     )
 
-    if ($null -eq $global:ADSI_Searcher ) {
+    if ($null -eq $script:ADSI_Searcher ) {
         if ($PSBoundParameters['Connection']) {
-            $global:ADSI_Searcher = $Connection
+            $script:ADSI_Searcher = $Connection
         } else {
             Write-Warning "ActiveDirectory Connection not set:"
             Write-Warning "To avoid this warning run 'Connect-ActiveDirectory' first"
@@ -52,8 +52,8 @@ function Search-ADSI {
     }
     try {
         Write-Verbose "Searching AD for $query"
-        $global:ADSI_Searcher.Filter = $query
-        $results = $global:ADSI_Searcher.FindAll()
+        $script:ADSI_Searcher.Filter = $query
+        $results = $script:ADSI_Searcher.FindAll()
         Write-Verbose "Query returned $($results.Count) results"
     } catch {
         throw "An error occured searching AD for $query`n$_"
