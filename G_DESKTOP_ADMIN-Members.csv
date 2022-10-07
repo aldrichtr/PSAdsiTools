@@ -1,0 +1,350 @@
+Account,DisplayName,Description
+GS_INF_ETE_AD15,GS_INF_ETE_AD15,Infrastructure Group Support ID
+GS_INF_ETE_AD17,GS_INF_ETE_AD17,Infrastructure Group Support ID
+GS_INF_ETE_AD18,GS_INF_ETE_AD18,Infrastructure Group Support ID
+GS_INF_ETE_AD20,GS_INF_ETE_AD20,Infrastrucutre Group Support ID
+GS_INF_ETE_AD19,GS_INF_ETE_AD19,Infrastrucutre Group Support ID
+GS_INF_ETE_AD16,GS_INF_ETE_AD16,Infrastructure  Group Support ID
+GS_INF_ETE_AD14,GS_INF_ETE_AD14,Infrastructure Group Support ID
+GS_INF_ETE_AD13,GS_INF_ETE_AD13,Infrastructure Group Support ID
+GS_INF_ETE_AD12,GS_INF_ETE_AD12,Infrastructure Group Support ID
+GS_INF_ETE_AD11,GS_INF_ETE_AD11,Infrastructure Group Support ID
+GS_AC00728_LBX_AD03,GS_AC00728_LBX_AD03,Application only Group Support ID
+GS_AC00728_LBX_AD02,GS_AC00728_LBX_AD02,Application only Group Support ID
+GS_AC00728_LBX_AD01,GS_AC00728_LBX_AD01,Application only Group Support ID
+GS_INF_IP_AD06,GS_INF_IP_AD06,Infrastructure Group Support ID
+GS_INF_IP_AD05,GS_INF_IP_AD05,Infrastructure Group Support ID
+GS_INF_IP_AD08,GS_INF_IP_AD08,Infrastructure Group Support ID
+GS_INF_IP_AD07,GS_INF_IP_AD07,Infrastructure Group Support ID
+GS_INF_ADOP_AD03,GS_INF_ADOP_AD03,Infrastructure Group Support ID
+GS_INF_ETE_AD10,GS_INF_ETE_AD10,Infrastructure Group Support ID
+GS_INF_ETE_AD09,GS_INF_ETE_AD09,Infrastructure Group Support ID
+GS_INF_ETE_AD08,GS_INF_ETE_AD08,Infrastructure Group Support ID
+GS_INF_FSAPG_AD04,GS_INF_FSAPG_AD04,Infrastucture Group Support ID
+GS_INF_PSFT_AD01,GS_INF_PSFT_AD01,Infrastructure Group Support ID
+APP_SCCM_Auto_SVC,APP_SCCM_Auto_SVC,Service Account
+GS_INF_SEAS_AD09,GS_INF_SEAS_AD09,Infrastructure Group Support ID
+GS_INF_SEAS_AD07,GS_INF_SEAS_AD07,Infrastructure Group Support ID
+GS_INF_SEAS_AD08,GS_INF_SEAS_AD08,Infrastructure Group Support ID
+GS_INF_ADOP_AD02,GS_INF_ADOP_AD02,Infrastructure Group Support ID
+GS_INF_ADOP_AD01,GS_INF_ADOP_AD01,Infrastructure Group Support ID
+GS_INF_ETE_AD07,GS_INF_ETE_AD07,Infrastructure Group Support ID
+GS_INF_CENG_FC01,GS_INF_CENG_FC01,Infrastructure Firecall ID
+GS_INF_CSSD_AD20,,Infrastructure Group Support ID
+GS_INF_CSSD_AD19,,Infrastructure Group Support ID
+GS_INF_CSSD_AD18,,Infrastructure Group Support ID
+GS_INF_CSSD_AD17,,Infrastructure Group Support ID
+GS_INF_CSSD_AD16,,Infratructure Group Support ID
+GS_INF_CSSD_AD15,,Infrastructure Group Support ID
+GS_INF_CSSD_AD14,,Infrastructure Group Support ID
+GS_INF_CSSD_AD13,,Infrastructure Group Support ID
+GS_INF_CSSD_AD12,,Infrastructure Group Support ID
+GS_INF_CSSD_AD11,,Infrastructure Group Support ID
+GS_INF_CSSD_AD10,,Infrastructure Group Support ID
+GS_INF_CSSD_AD09,,Infrastructure Group Support ID
+GS_INF_CSSD_AD08,,Infrastructure Group Support ID
+GS_INF_CSSD_AD07,,Infrastructure Group Support ID
+GS_INF_CSSD_AD06,,Infrastructure Group Support ID
+GS_INF_CSSD_AD05,,Infrastructure Group Support ID
+GS_INF_CSSD_AD04,,Infrastructure Group Support ID
+GS_INF_CSSD_AD03,,Infrastructure Group Support ID
+GS_INF_CSSD_AD02,,Infrastructure Group Support ID
+GS_INF_CSSD_AD01,,Infrastructure Group Support ID
+GS_INF_IAMPAM_AD04,GS_INF_IAMPAM_AD04,Infrastructure Group Support ID
+GS_INF_IAMPAM_AD03,GS_INF_IAMPAM_AD03,Infrastructure Group Support ID
+GS_INF_ETE_AD06,GS_INF_ETE_AD06,Infrastructure Group Support ID
+GS_INF_CENG_ADM03,GS_INF_CENG_ADM03,Infrastructure Group Support ID
+GS_INF_CENG_AD02,GS_INF_CENG_AD02,Group ID
+GS_INFR_SDAD_ADM01,GS_INFR_SDAD_ADM01,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM16,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM15,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM14,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM13,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM12,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM11,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM10,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM9,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM8,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM7,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM6,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM5,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM4,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM2,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM17,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM1,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM18,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INFR_SDAD_ADM19,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INF_ISE_AD04,GS_INF_ISE_AD04,Group ID
+GS_INF_ISE_AD03,GS_INF_ISE_AD03,Group ID
+GS_INF_ISE_AD02,GS_INF_ISE_AD02,Group ID
+GS_INF_ISE_AD01,GS_INF_ISE_AD01,Group ID
+GS_INFR_SDAD_ADM20,,Members of this group have Required Approval before accessing privileged accounts in safe- G_INFR_SDAD_Prod_PreApp
+GS_INF_BOSSP_AD06,,GSID -  Infrastructure level access for BOSS group
+GS_INF_BOSSP_AD05,,GSID -  Infrastructure level access for BOSS group
+GS_INF_BOSSP_AD04,,GSID -  Infrastructure level access for BOSS group
+GS_INF_BOSSP_AD03,,GSID -  Infrastructure level access for BOSS group
+GS_INF_BOSSP_AD02,,GSID -  Infrastructure level access for BOSS group
+GS_INF_BOSSP_AD01,,GSID -  Infrastructure level access for BOSS group
+GS_INF_IP_AD04,GS_INF_IP_AD04,Infrastructure Group Support ID
+GS_INF_IP_AD03,GS_INF_IP_AD03,Infrastrucutre Group Support ID
+GS_INF_IP_AD02,GS_INF_IP_AD02,Infrastructure Group Support ID
+GS_INF_IP_AD01,GS_INF_IP_AD01,Infrastructure Group Support ID
+GS_INF_ETE_AD03,GS_INF_ETE_AD03,Group ID
+GS_INF_ETE_AD04,GS_INF_ETE_AD04,Group ID
+GS_INF_ETE_AD05,GS_INF_ETE_AD05,Group ID
+GS_CPE_Desktop_Adm20,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm19,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm18,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm17,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm16,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm1,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm10,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm11,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm12,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm13,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm14,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm15,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm2,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm3,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm4,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm5,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm6,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm7,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm8,,GID - Created As Per  SCTASK0454157
+GS_CPE_Desktop_Adm9,,GID - Created As Per  SCTASK0454157
+APP_MAGNET_SVC,APP_MAGNET_SVC,Axiom Magnet is the forensic investigation software that is used by the CSOC Forensics team.
+GS_INF_IHOWIN_AD03,GS_INF_IHOWIN_AD03,Group ID
+GS_INF_IHOWIN_AD01,GS_INF_IHOWIN_AD01,Group ID
+GS_INF_IHOWIN_AD02,GS_INF_IHOWIN_AD02,Group ID
+GS_INF_IAMPAM_AD02,GS_INF_IAMPAM_AD02,Group ID
+GS_INF_IAMPAM_AD01,GS_INF_IAMPAM_AD01,Group ID
+GS_INF_SEAS_AD06,GS_INF_SEAS_AD06,Group ID
+GS_INF_SEAS_AD05,GS_INF_SEAS_AD05,Group ID
+GS_INF_SEAS_AD04,GS_INF_SEAS_AD04,Group ID
+GS_INF_SEAS_AD03,GS_INF_SEAS_AD03,Group ID
+GS_INF_SEAS_AD02,GS_INF_SEAS_AD02,Group ID
+GS_INF_SEAS_AD01,GS_INF_SEAS_AD01,Group ID
+GS_INFR_CNOCD_ADM02,,Group ID
+GS_INF_CNOCD_AD01,GS_INF_CNOCD_AD01,Group ID
+GS_INF_CSOC_ADM3,GS_INF_CSOC_ADM3,Group ID
+GS_INF_CSOC_ADM2,GS_INF_CSOC_ADM2,Group ID
+GS_INF_CSOC_ADM1,GS_INF_CSOC_ADM1,Group ID
+GS_INF_EPMN_Adm07,GS_INF_EPMN_Adm07,Group ID
+GS_INF_EPMN_Adm06,GS_INF_EPMN_Adm06,Group ID
+GS_INF_EPMN_Adm05,GS_INF_EPMN_Adm05,Group ID
+GS_INF_EPMN_Adm04,GS_INF_EPMN_Adm04,Group ID
+GS_INF_EPMN_Adm03,GS_INF_EPMN_Adm03,Group ID
+GS_INF_EPMN_Adm02,GS_INF_EPMN_Adm02,Group ID
+GS_INF_EPMN_Adm01,GS_INF_EPMN_Adm01,Group ID
+GS_INF_CNOCD_ADM02,GS_INF_CNOCD_ADM02,Group ID
+GS_INFR_CNOCD_ADM01,GS_INFR_CNOCD_ADM01,Group ID
+GS_INF_ETE_AD02,GS_INF_ETE_AD02,GroupID - INFRA_ETE field service technician required for job duties
+GS_INF_ETE_AD01,GS_INF_ETE_AD01,GroupID - INFRA - ETE -field service technician required for job duties
+GS_C00200_EPMN_Adm6,GS_C00200_EPMN_Adm6,GroupID - EPMN
+GS_C00200_EPMN_Adm5,GS_C00200_EPMN_Adm5,GroupID - EPMN
+GS_C00200_EPMN_Adm4,GS_C00200_EPMN_Adm4,GroupID - EPMN
+GS_C00200_EPMN_Adm3,GS_C00200_EPMN_Adm3,GroupID - EPMN
+GS_C00200_EPMN_Adm2,GS_C00200_EPMN_Adm2,GroupID - EPMN
+GS_C00200_EPMN_Adm1,GS_C00200_EPMN_Adm1,GroupID - EPMN
+GS_C00200_SCCM_Adm7,GS_C00200_SCCM_Adm7,Group ID
+GS_C00200_SCCM_Adm8,GS_C00200_SCCM_Adm8,Group ID
+GS_C00200_SCCM_Adm5,GS_C00200_SCCM_Adm5,Group ID
+GS_C00200_SCCM_Adm6,GS_C00200_SCCM_Adm6,Group ID
+GS_C00200_SCCM_Adm4,GS_C00200_SCCM_Adm4,Group ID
+GS_C00200_SCCM_Adm3,GS_C00200_SCCM_Adm3,Group ID
+GS_C00200_SCCM_Adm2,GS_C00200_SCCM_Adm2,Group ID
+GS_C00200_SCCM_Adm9,GS_C00200_SCCM_Adm9,Group ID
+GS_INFR_LSOps_ADM4,GS_INFR_LSOps_ADM4,Group ID
+GS_INFR_LSOps_ADM3,GS_INFR_LSOps_ADM3,Group ID
+GS_INFR_LSOps_ADM2,GS_INFR_LSOps_ADM2,Group ID
+GS_INFR_LSOps_ADM1,GS_INFR_LSOps_ADM1,Group ID
+GS_C00200_SCCM_Adm1,GS_C00200_SCCM_Adm1,Group ID
+GS_INFR_EPMN_Adm06,GS_INFR_EPMN_Adm06,Group ID
+GS_INFR_EPMN_Adm05,GS_INFR_EPMN_Adm05,Group ID
+GS_INFR_EPMN_Adm04,GS_INFR_EPMN_Adm04,Group ID
+GS_INFR_EPMN_Adm03,GS_INFR_EPMN_Adm03,Group ID
+GS_INFR_EPMN_Adm07,GS_INFR_EPMN_Adm07,Group ID
+GS_INFR_EPMN_Adm02,GS_INFR_EPMN_Adm02,Group ID
+GS_INFR_EPMN_Adm01,GS_INFR_EPMN_Adm01,Group ID
+GS_infr_FSAPG_admin3,GS_infr_FSAPG_admin3,Group ID
+GS_infr_FSAPG_admin2,GS_infr_FSAPG_admin2,Group ID
+GS_INF_IHOWIN_AD06,GS_INF_IHOWIN_AD06,Group ID - Enterprise Hosting Services
+GS_INF_IHOWIN_AD05,GS_INF_IHOWIN_AD05,Group ID - Enterprise Hosting Services
+GS_INF_IHOWIN_AD04,GS_INF_IHOWIN_AD04,Group ID - Enterprise Hosting Services
+App_RT_SVC,App_RT_SVC,I need to install software to run Red Team Missions.
+GS_infr_FSAPG_admin,GS_infr_FSAPG_admin,Group ID
+P_ChriHion,"Hion, Christopher",P_Account
+P_ANair,"Nair, Amrita -NC",P Account
+P_DeepGari,"Gari, Deepthi-NC",P Account
+P_MichShea,"Shea, Michael",P_Account
+P_ManShar,"Sharma, Manish-NC",P_Account
+P_WBarrett,"Barrett, Wesley",P_Account
+P_CathWong,"Wong, Catherine",P_Account
+P_JuAquino,"Aquino, Jun-NC",P_Account
+P_KFloranc,"Florance, Kevin-NC",P_Account
+P_RCunning,"Cunningham, Riley-NC",P_Account
+APP_AIP_Scanner_SVC,APP_AIP_Scanner_SVC,Required to Deploy and being scanning / Protection with AIP for Data Security Project.
+P_PraSwain,"Swain, Pralipta-NC",P_Account
+P_AaJohnso,"Johnson, Aaron",P_Account
+P_HPaparod,"Paparodopoulos, Harry",P_Account
+P_AllJohnson,"Johnson, Allen",P_Account
+P_ChangYoo,"Yoo, Chang",P_Account
+P_JSeelig,"Seelig, Joel",P_Account
+P_GoldIfie,"Ifie, Golden",P_Account
+P_MiOsorio,"Osorio, Miguel",P_Account
+P_MDeshpande,"Deshpande, Meenakshi-NC",P_Account
+P_RRamaiya,"Ramaiyan, Raja-NC",P_Account
+P_GaSharma,"Sharma, Garima-NC",P_Account
+P_ARajappa,"Rajappan, Archana-NC",P_Account
+P_PRakvi,"Rakvi, Pranish",P_Account
+P_RaFretz,"Fretz, Rachel",P_Account
+P_KiHolmes,"Holmes, Kimberly",P_Account
+P_AmMartin,"Martinez, Amelia",P_Account
+p_rromanos,"Romanossian, Raffi",P_ account
+app_mway_svc,app_mway_svc,Service accounts for Messageway TEST and PROD Environment.
+P_CDietric,"Dietrich, Chad",P_Account
+P_CDonovan,"Donovan, Colin",P_Account
+P_AGichura,"Gichura, Anne",P_Account
+GS_SC00903_RBC_AD02,GS_SC00903_RBC_AD02,Infrastructure Group Support ID
+GS_SC00903_RBC_AD03,GS_SC00903_RBC_AD03,Infrastructure Group Support ID
+GS_SC00903_RBC_AD04,GS_SC00903_RBC_AD04,Infrastructure Group Support ID
+GS_SC00903_RBC_AD06,GS_SC00903_RBC_AD06,Infrastructure  Group Support ID
+GS_SC00903_RBC_AD05,GS_SC00903_RBC_AD05,Infrastrucutre Group Support ID
+GS_SC00903_RBC_AD01,GS_SC00903_RBC_AD01,Infrastructure Group Support ID
+GS_SC00903_RBC_AD07,GS_SC00903_RBC_AD07,Infrastructure Group Support ID
+GS_INF_IAM_AD07,GS_INF_IAM_AD07,Infrastructure Group Support ID
+GS_INF_IAM_AD05,GS_INF_IAM_AD05,Infrastructure Group Support ID
+GS_INF_IAM_AD02,GS_INF_IAM_AD02,Infrastructure Group Support ID
+GS_INF_IAM_AD01,GS_INF_IAM_AD01,Infrastructure Group Support ID
+GS_INF_IAM_AD10,GS_INF_IAM_AD10,Infrastructure Group Support ID
+GS_INF_IAM_AD08,GS_INF_IAM_AD08,Infrastructure Group Support ID
+GS_INF_IAM_AD04,GS_INF_IAM_AD04,Infrastructure Group Support ID
+GS_INF_IAM_AD03,GS_INF_IAM_AD03,Infrastructure Group Support ID
+GS_INF_IAM_AD06,GS_INF_IAM_AD06,Infrastructure Group Support ID
+GS_INF_IAM_AD09,GS_INF_IAM_AD09,Infrastructure Group Support ID
+GS_INF_IAMPAM_AD04,GS_INF_IAMPAM_AD04,Infrastructure Group Support ID
+GS_INF_IAMPAM_AD03,GS_INF_IAMPAM_AD03,Infrastructure Group Support ID
+GS_INF_IAMPAM_AD02,GS_INF_IAMPAM_AD02,Group ID
+GS_INF_IAMPAM_AD01,GS_INF_IAMPAM_AD01,Group ID
+P_MaVaca,"Vaca, Mark-NC",P Account
+P_VDeStefa,"DeStefano, Vincent",P_Account
+P_EGugliot,"Gugliotti, Elaine",P Account
+P_BShresth,"Shrestha, Bishrant-NC",P_Account
+P_AllJohnson,"Johnson, Allen",P_Account
+APP_O365_Mig2_SVC,APP_O365_Mig2_SVC,Required for Job Function
+P_MDeshpande,"Deshpande, Meenakshi-NC",P_Account
+P_GaSharma,"Sharma, Garima-NC",P_Account
+P_ARajappa,"Rajappan, Archana-NC",P_Account
+P_RaFretz,"Fretz, Rachel",P_Account
+App_O365_Mig_Svc,CNB Office 365 Migration,"This account will require permissions to migrate exchange mailboxes, migrate home directory folders, and adjust group policy on users/computers programmatically"
+APP_IDNIQPROD_SVC,APP_IDNIQPROD_SVC,We use this service account to communicate SailPoint to Active Directory.(Adding/modifying etc.)
+P_IndSutar,"Sutar, Indrayani-NC",P_account
+P_KVanclev,"Van Cleve, Kris",P Account
+P_OmKamble,"Kamble, Omprakash-NC",P_account
+P_SGulhane,"Gulhane, Shweta-NC",P_Account
+P_JConward2,"Conward, Jacques",P_Account
+p_fgutierr,"Gutierrez, Favio",P_Account
+P_wmathis,William Mathis,P_Account
+P_jvargas,Tom Vargas,P_Account
+P_WoonKok,"Kok, Woon",P_Account BATS-eCommerce Ops
+AccountLockout,Account Lockout,
+P_BrKiefer,"Kiefer, Brian",P_Account
+GS_INF_IHOWIN_AD03,GS_INF_IHOWIN_AD03,Group ID
+GS_INF_IHOWIN_AD01,GS_INF_IHOWIN_AD01,Group ID
+GS_INF_IHOWIN_AD02,GS_INF_IHOWIN_AD02,Group ID
+GS_INF_IHOWIN_AD06,GS_INF_IHOWIN_AD06,Group ID - Enterprise Hosting Services
+GS_INF_IHOWIN_AD05,GS_INF_IHOWIN_AD05,Group ID - Enterprise Hosting Services
+GS_INF_IHOWIN_AD04,GS_INF_IHOWIN_AD04,Group ID - Enterprise Hosting Services
+P_ANair,"Nair, Amrita -NC",P Account
+P_DeepGari,"Gari, Deepthi-NC",P Account
+P_KFloranc,"Florance, Kevin-NC",P_Account
+P_KDangeti,"Dangeti, Kiranmai-NC",P_Account
+P_MinhLy,"Ly, Minh",P_Account
+P_MuKhalil,"Khalil, Muhammad",P_Account
+P_MVosgani,"VosganianJr, Michael",P Account
+P_JSerrano,"Serrano, Joseph",P_Account
+P_OsCarlos,"Carlos, Oscar",P_Account
+App_Turbonomics_Svc,App_Turbonomics_Svc,turbonomics application to pull data from Vcenter Servers
+P_VHacobia,"Hacobian, Vic",P Account - BATS-Entprs Serv/1801 Oly
+P_WilChow,"Chow, William",P Account
+P_BNg,"Ng, Bryan",P_Account
+P_KHusby,"Husby, Kristian",P_account
+P_junderwo,Jim Underwood,p_Account
+P_RobRiley,"Riley, Rob",P Account
+P_ABakhtia,"Bakhtiari, Ali",P_Account
+G_NOC_CNBNT_Admin3,G_INFRA_NOC_CNBNT_Admin3,Group ID
+G_INFRA_NOC_Admin2,G_INFRA_NOC_Admin2,Group ID
+G_INFRA_NOC_Admin1,G_INFRA_NOC_Admin1,Group ID
+P_BruceBao,"Bao, Bruce",P_Account
+P_JoDiaz,"Diaz, Jose",P_Account
+p_gfukuwa,"Fukuwa, Geraldine",P_account
+p_jalarcon,"Alarcon, Javier",P_account
+p_gandrada,"Andrada, Glenn",P_account
+P_TNorley,"Norley, Terral",P_Account
+P_MSaucedo,"Saucedo, Mario",P_Account
+P_DKennedy,"Kennedy, Daniel",P_Account - BATS-Information Security
+P_GFiguerr,"Figuerrez, Gabriel",P_Accounts
+P_IndSutar,"Sutar, Indrayani-NC",P_account
+P_MLampa,"Lampa, Mike",P Account
+P_KVanclev,"Van Cleve, Kris",P Account
+P_MartLope,"Lopez, Martin",P Account
+App_Qualys_SVC,App_Qualys_SVC,This account is to be used as part of CNB Vulnerability Management Program.
+App_SNDiscovery2_SVC,App_SNDiscovery2_SVC,"Discovery collects Infrastructure assets that are identified IP-enabled configuration items (CIs), maps their interdependencies, and populates and maintains them in the ServiceNow Configuration Management Database (CMDB).  Agentless discovery of hardware, software, virtual and cloud resources, and their relationships."
+App_SNDiscovery1_svc,App_SNDiscovery1_svc,
+App_CybArk_Wks_svc,App_CybArk_Wks_svc,
+P_KBornfle,"Bornfleth, Kevin",P Account - BATS-Info Security/MN
+P_GleTupil,"Tupil, Glen",P Account
+P_GEdwards,"Edwards, Gavin",P Account
+P_RLHudson,"Hudson, Robert-NC",BATS-Operations Serv/CN Plaza - P Account
+P_CRakoczy,"Rakoczy, Christopher",P Account
+P_GArutyun,"Arutyunyan, Grigor",P_Account
+P_PSolomon,"Solomone, Philip",P_Account
+P_EFerolin2,"Ferolino, Eric",P Account
+P_SeLee,"Lee, Sean C",P Account
+P_JonatLee,"Lee, Jonathan",P Account
+P_OmKamble,"Kamble, Omprakash-NC",P_account
+P_SGulhane,"Gulhane, Shweta-NC",P_Account
+P_CMarshal,"Marshall, Carol",P_Account
+p_gfukuwa,"Fukuwa, Geraldine",P_account
+P_KCUSHING,"Cushing, Ken",P_Account
+P_JBridges,"Bridges, Jake",P_Account
+P_JTribe,"Tribe, Jeff",P Account
+P_TChiueh,"Chiueh, Ted",P_Account
+P_APodue1,"Podue, Anthony",P Account
+P_SHamid,"Hamid, Safraz",P_Account
+P_RPrice,"Price, Ronald",P_account
+app_CitrixVDI_svc,app_CitrixVDI_svc,Citrix VDI Access
+P_JAliff,"Aliff, Jody",P_Account
+P_JoCastro,"Castro, Jose",P_Account
+P_ISOHN,"Sohn, Ik",P_Account
+P_PTuminar,"Tuminaro, Patrick",P_Account
+p_fgutierr,"Gutierrez, Favio",P_Account
+P_GMouyios,"Mouyios, George",P_account
+P_CNgan,"Ngan, Chuck",P_Account
+P_JLett,"Lett, John",P_account
+p_jcajayon,"Cajayon, Jojo",p_account
+P_ATruong,"Truong, Allen",P_Account
+P_JusDay2,"Day, Justin",P_Account
+P_LDryer,"Dryer, Lisa",P_Account
+P_LGesling,"Gesling, Larry",P_Account
+P_TKorkmaz,"Korkmaz, Tasnim",P_Account
+P_MWurl,"Wurl, Michael",P_Account
+P_HuRodrig,"Rodriguez, Hugo",P_Account
+P_ViJackso,"Jackson, Vincent",P_Account
+P_CVazquez,"Vazquez, Carlos",P_Account
+APP_SCCM_CLIENT_SVC,APP_SCCM_CLIENT_SVC,service accounts are required for for SCCM 2012
+P_GCalipes,"Calipes, Gina",P_Account
+G_WUG_SVC,G_WUG_SVC,Whats up Gold Service Account
+p_rijones1,"Jones, Ricardo",p_account
+p_jswaffor,"Swafford, Joy",P_Account
+p_asolokhi,"Solokhin, Alex",p_account
+P_FRaigoza,Francisco Raigoza,P_Account
+P_RSanders,"Sanders, Robin",P_account
+p_ptakeuchi,"Takeuchi, Paul",P_Account
+p_gyapo,"Yapo, Glen",P_Account
+p_lmendely,"P_Mendelyan, Levon",P_Account
+P_jvargas,Tom Vargas,P_Account
+P_KYang,Kevin Yang,P_Account
+P_RJames,Reggie James,P_Account
+P_GQian,George Qian,p_Account
+P_mquan,"Quan, Mel",p_account
