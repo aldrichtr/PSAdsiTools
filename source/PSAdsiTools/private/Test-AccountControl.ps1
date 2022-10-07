@@ -6,27 +6,34 @@ Function Test-AccountControl {
         This is intended to be a private function that public functions like
         Test-CloExempt can use.
     .EXAMPLE
-        Test-AccountControl SMARTCARD_REQUIRED $user.Properties.useraccountcontrol
+        Test-AccountControl $user.Properties.useraccountcontrol SMARTCARD_REQUIRED
+    .EXAMPLE
+        $user | Test-AccountControl SMARTCARD_REQUIRED
     #>
     [CmdletBinding()]
     param(
-        # AdAcountControl flag to test
-        [Parameter(
-            Mandatory = $true,
-            Position = 0
-        )]
-        [ADAccountControl]$Flag,
-
         # UserAccountControl property
         [Parameter(
-            Mandatory = $true,
-            ValueFromPipeline = $true,
-            Position = 1
+            Position = 0,
+            Mandatory,
+            ValueFromPipeline,
+            ValueFromPipelineByPropertyName
         )]
-        [Object]$Control
+        [Int32]$UserAccountControl,
+
+        # AdAcountControl flag to test
+        [Parameter(
+            Mandatory
+        )]
+        [ADAccountControl]$Flag
     )
-
-    [AdAccountControl]$Account = $Control
-
-    $Account.HasFlag($Flag)
+    begin {
+        Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
+    }
+    process {
+        ([AdAccountControl]$UserAccountControl).HasFlag($Flag)
+    }
+    end {
+        Write-Debug "`n$('-' * 80)`n-- End $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
+    }
 }
