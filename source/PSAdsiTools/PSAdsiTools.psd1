@@ -1,6 +1,6 @@
 @{
     RootModule        = 'PSAdsiTools.psm1'
-    ModuleVersion     = '0.1.3'
+    ModuleVersion     = '0.1.5'
     GUID              = 'bda38d23-247c-4241-9806-4bcc2423aaa7'
     Author            = 'Timothy Aldrich'
     CompanyName       = 'aldrichtr'
