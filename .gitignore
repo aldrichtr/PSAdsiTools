@@ -1,0 +1,5 @@
+# Build Artifacts
+out/
+
+# Build staging area
+stage/

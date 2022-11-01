@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [0.1.2] - 2022-10-27
+## [0.1.3] - 2022-11-01
+
+### Fixed
+
+- ConvertFrom-SearchResult function is not exported from module
+
+## [0.1.1] - 2022-10-27
 
 ### Added
 
@@ -13,9 +19,8 @@ All notable changes to this project will be documented in this file.
 - PropertyConvertion functions for a SearchResult
 - Added test for accountcontrols
 
-### Build
-
 - Initial import of project
 
-[Unreleased]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.2..HEAD
+[Unreleased]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.3..HEAD
+[0.1.3]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.1..v0.1.3
 [0.1.2]: https://github.com/aldrichtr/PSAdsiTools/tree/v0.1.2
