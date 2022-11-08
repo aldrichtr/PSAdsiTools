@@ -62,6 +62,14 @@ function ConvertFrom-SearchResult {
                 $search_result = ConvertTo-SimpleProperty @options
             }
 #>
+            if ($null -ne $search_result.useraccountcontrol) {
+                $uac = $search_result.useraccountcontrol
+                $search_result['AccountDisabled'] = $uac | Test-AccountDisabled
+                $search_result['AccountLocked'] = $uac | Test-AccountLockout
+                $search_result['PasswordExpired'] = $uac | Test-PasswordExpired
+                $search_result['PasswordNotRequired'] = $uac | Test-PasswordNotRequired
+                $search_result['PasswordNeverExpires'] = $uac | Test-PasswordNeverExpires
+            }
             [PSCustomObject]$search_result
         }
     }
