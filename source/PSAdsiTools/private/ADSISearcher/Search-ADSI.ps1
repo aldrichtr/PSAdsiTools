@@ -2,9 +2,11 @@
 function Search-ADSI {
     <#
     .SYNOPSIS
-        Internal function that searches AD and returns a hash
+        Internal function that searches AD and returns a SearchResult
     .LINK
         <https://learn.microsoft.com/en-us/windows/win32/adsi/search-filter-syntax>
+    .LINK
+        ConvertFrom-SearchResult
     #>
 
     [CmdletBinding(
