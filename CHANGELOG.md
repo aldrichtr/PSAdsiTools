@@ -4,8 +4,15 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.6.0] - 2022-11-08
+
+### Added
+
+- Add functions for testing UserAccountControl flags
+
 ## [0.1.5] - 2022-11-01
 ### Added
+
 - Add functions for groups and group members
 
 ## [0.1.3] - 2022-11-01
@@ -25,7 +32,8 @@ All notable changes to this project will be documented in this file.
 
 - Initial import of project
 
-[Unreleased]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.5..HEAD
+[Unreleased]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.6.0..HEAD
+[0.1.6.0]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.5..v0.1.6.0
 [0.1.5]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.3..v0.1.5
 [0.1.5]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.3..v0.1.5
 [0.1.3]: https://github.com/aldrichtr/PSAdsiTools/compare/v0.1.1..v0.1.3
