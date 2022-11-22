@@ -3,3 +3,6 @@ out/
 
 # Build staging area
 stage/
+
+# The wiki repository
+docs/wiki/
