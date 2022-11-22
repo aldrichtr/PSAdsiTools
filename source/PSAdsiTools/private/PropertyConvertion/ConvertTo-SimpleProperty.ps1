@@ -108,12 +108,9 @@ function ConvertTo-SimpleProperty {
                     $ThisPropertyString = ConvertFrom-PropertyValueCollectionToString -PropertyValueCollection $Value[$ThisProperty]
                     $ThisObject[$ThisProperty] = $ThisPropertyString
                     <#------------------------------------------------------------------
-                    This copies the properties up to the top level.
-                    Want to remove this later
-                    The nested pscustomobject accomplishes the goal of removing
-                    hashtables and PropertyValueCollections and PropertyCollections
-
-                    TODO: move this code into a ConvertFrom-PropertyCollection function
+                     Because we are adding the values to the "top-level" dictionary,
+                     it makes more sense to leave this here rather than move it to a
+                     separate function
                     ------------------------------------------------------------------#>
                     $PropertyDictionary["$Prefix$ThisProperty"] = $ThisPropertyString
 
@@ -150,11 +147,6 @@ function ConvertTo-SimpleProperty {
                     }
                     $ThisObject[$ThisProperty] = $ThisPropertyString
 
-                    # This copies the properties up to the top level.
-                    # Want to remove this later
-                    # The nested pscustomobject accomplishes the goal of removing hashtables and PropertyValueCollections and PropertyCollections
-                    # But I may have existing functionality expecting these properties so I am not yet ready to remove this
-                    # When I am, I should move this code into a ConvertFrom-PropertyCollection function in the Adsi module
                     $PropertyDictionary["$Prefix$ThisProperty"] = $ThisPropertyString
 
                 }
