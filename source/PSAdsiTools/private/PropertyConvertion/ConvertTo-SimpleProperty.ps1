@@ -154,7 +154,12 @@ function ConvertTo-SimpleProperty {
                 continue
             }
             'System.DirectoryServices.ResultPropertyValueCollection' {
-                $PropertyDictionary["$Prefix$Property"] = ConvertFrom-ResultPropertyValueCollectionToString -ResultPropertyValueCollection $Value
+                if ($Property -like 'objectsid') {
+                    $PropertyDictionary["$Prefix$Property"] = $Value | Convert-SecurityIdentifier
+
+                } else {
+                    $PropertyDictionary["$Prefix$Property"] = ConvertFrom-ResultPropertyValueCollectionToString -ResultPropertyValueCollection $Value
+                }
                 continue
             }
             'System.Management.Automation.PSCustomObject' {
