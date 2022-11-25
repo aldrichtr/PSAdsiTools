@@ -40,28 +40,30 @@ function ConvertFrom-SearchResult {
                 PSTypeName = 'ADSI.SearchResult'
             }
 
-            Write-Debug "  Converting all the keys in the Properties table"
+            Write-Debug '  Converting all the keys in the Properties table'
             foreach ($key in $result.properties.Keys) {
                 Write-Debug "   - ${key}:"
                 $options = @{
-                    InputObject = $result.properties
-                    Property  = $key
+                    InputObject        = $result.properties
+                    Property           = $key
                     PropertyDictionary = $search_result
                 }
                 $search_result = ConvertTo-SimpleProperty @options
                 Write-Debug "     - now SearchResult contains $($search_result.Keys -join ', ')"
             }
 
-<#            # We will allow any existing properties to override members of the ResultPropertyCollection
+            # We will allow any existing properties to override members of the ResultPropertyCollection
             foreach ($prop in $result_note_properties) {
-                $options = @{
-                    InputObject = $result_properties
-                    Property  = $prop.Name
-                    PropertyDictionary = $search_result
+                if (-not($prop.Name -like 'properties')) {
+                    $options = @{
+                        InputObject        = $result_properties
+                        Property           = $prop.Name
+                        PropertyDictionary = $search_result
+                    }
+                    $search_result = ConvertTo-SimpleProperty @options
                 }
-                $search_result = ConvertTo-SimpleProperty @options
             }
-#>
+
             if ($null -ne $search_result.useraccountcontrol) {
                 $uac = $search_result.useraccountcontrol
                 $search_result['AccountDisabled'] = $uac | Test-AccountDisabled
