@@ -1,4 +1,6 @@
 
+using namespace System.DirectoryServices
+
 function ConvertFrom-ResultPropertyValueCollectionToString {
     <#
     .SYNOPSIS
@@ -12,7 +14,7 @@ function ConvertFrom-ResultPropertyValueCollectionToString {
             Position = 0,
             ValueFromPipeline
         )]
-        [System.DirectoryServices.ResultPropertyValueCollection]$ResultPropertyValueCollection
+        [ResultPropertyValueCollection]$ResultPropertyValueCollection
     )
     begin {
         Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
@@ -37,7 +39,7 @@ function ConvertFrom-ResultPropertyValueCollectionToString {
         if ($collection.Count -eq 1) {
             $collection[0] | Write-Output
         } else {
-            $collection | Write-Output -NoEnumerate
+            Write-Output -NoEnumerate -InputObject $collection
         }
         Write-Debug "`n$('-' * 80)`n-- End $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
     }

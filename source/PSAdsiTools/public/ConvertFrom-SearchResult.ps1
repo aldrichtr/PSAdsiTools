@@ -1,4 +1,6 @@
 
+using namespace System.DirectoryServices
+
 function ConvertFrom-SearchResult {
     <#
     .SYNOPSIS
@@ -14,7 +16,7 @@ function ConvertFrom-SearchResult {
             Position = 0,
             ValueFromPipeline
         )]
-        [System.DirectoryServices.SearchResult[]]$SearchResult
+        [SearchResult[]]$SearchResult
     )
 
     begin {
@@ -28,15 +30,15 @@ function ConvertFrom-SearchResult {
 
             # This will pull out all of the properties, because they aren't all available
             # unless we do this
-            Write-Debug "  Extracting properties of this $($result.GetType())"
+            Write-Debug "  Extracting properties of this $($result.GetType().FullName)"
 
-            $result_properties = $result |
-            Select-Object -Property *
+            $resultProperties = $result |
+                Select-Object -Property *
 
-            $result_note_properties = $result_properties |
-            Get-Member -MemberType Property, CodeProperty, ScriptProperty, NoteProperty
+            $resultNoteProperties = $resultProperties |
+                Get-Member -MemberType Property, CodeProperty, ScriptProperty, NoteProperty
 
-            $search_result = @{
+            $resultObject = @{
                 PSTypeName = 'ADSI.SearchResult'
             }
 
@@ -46,33 +48,33 @@ function ConvertFrom-SearchResult {
                 $options = @{
                     InputObject        = $result.properties
                     Property           = $key
-                    PropertyDictionary = $search_result
+                    PropertyDictionary = $resultObject
                 }
-                $search_result = ConvertTo-SimpleProperty @options
-                Write-Debug "     - now SearchResult contains $($search_result.Keys -join ', ')"
+                $resultObject = ConvertTo-SimpleProperty @options
+                Write-Debug "     - now SearchResult contains $($resultObject.Keys -join ', ')"
             }
 
             # We will allow any existing properties to override members of the ResultPropertyCollection
-            foreach ($prop in $result_note_properties) {
+            foreach ($prop in $resultNoteProperties) {
                 if (-not($prop.Name -like 'properties')) {
                     $options = @{
-                        InputObject        = $result_properties
+                        InputObject        = $resultProperties
                         Property           = $prop.Name
-                        PropertyDictionary = $search_result
+                        PropertyDictionary = $resultObject
                     }
-                    $search_result = ConvertTo-SimpleProperty @options
+                    $resultObject = ConvertTo-SimpleProperty @options
                 }
             }
 
-            if ($null -ne $search_result.useraccountcontrol) {
-                $uac = $search_result.useraccountcontrol
-                $search_result['AccountDisabled'] = $uac | Test-AccountDisabled
-                $search_result['AccountLocked'] = $uac | Test-AccountLockout
-                $search_result['PasswordExpired'] = $uac | Test-PasswordExpired
-                $search_result['PasswordNotRequired'] = $uac | Test-PasswordNotRequired
-                $search_result['PasswordNeverExpires'] = $uac | Test-PasswordNeverExpires
+            if ($null -ne $resultObject.useraccountcontrol) {
+                $uac = $resultObject.useraccountcontrol
+                $resultObject['AccountDisabled']      = $uac | Test-AccountDisabled
+                $resultObject['AccountLocked']        = $uac | Test-AccountLockout
+                $resultObject['PasswordExpired']      = $uac | Test-PasswordExpired
+                $resultObject['PasswordNotRequired']  = $uac | Test-PasswordNotRequired
+                $resultObject['PasswordNeverExpires'] = $uac | Test-PasswordNeverExpires
             }
-            [PSCustomObject]$search_result
+            [PSCustomObject]$resultObject
         }
     }
 }

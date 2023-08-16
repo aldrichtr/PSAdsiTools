@@ -1,25 +1,30 @@
 mode: Mainline
 commit-message-incrementing: MergeMessageOnly
 
-assembly-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILDCOUNT ?? 0}'
-assembly-informational-format: '{NuGetVersionV2}+Build.{env:BUILDCOUNT ?? 0}.Date.{CommitDate}.Branch.{env:SAFEBRANCHNAME ?? unknown}.Sha.{Sha}'
+assembly-versioning-format: '{Major}.{Minor}.{Patch}'
+assembly-informational-format: '{Major}.{Minor}.{Patch}.{BranchName ?? unknown}-{CommitsSinceVersionSourcePadded ?? 0}'
 commit-date-format: yyyyMMddTHHmmss
 
 branches:
   main:
     increment: Patch
-    is-release-branch: true
+    is-mainline: true
   pull-request:
-    tag: rc
-    increment: Patch
+    tag: pr
+    increment: Minor
   feature:
     regex: feature/
     tag: useBranchName
     increment: Patch
     source-branches: ['main', 'feature']
     track-merge-target: true
-  release:
-    tag: ''
-    regex: releases?[/-]\d+\.\d+\.\d+
+  hotfix:
+    regex: ^(bug|hot)?fix/
+    tag: useBranchName
     increment: Patch
+    source-branches: ['main', 'feature']
+  release:
+    regex: release[/-]\d+\.\d+\.\d+
+    tag: useBranchName
+    increment: Inherit
     is-release-branch: true

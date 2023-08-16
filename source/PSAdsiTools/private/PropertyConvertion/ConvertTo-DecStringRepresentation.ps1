@@ -19,6 +19,6 @@ function ConvertTo-DecStringRepresentation {
         [byte[]]$ByteArray
     )
 
-    $ByteArray |
-    ForEach-Object { '{0}' -f $_ }
+    $ByteArray
+    | ForEach-Object { '{0}' -f $_ }
 }

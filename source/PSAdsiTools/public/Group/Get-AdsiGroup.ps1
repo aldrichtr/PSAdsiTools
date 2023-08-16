@@ -10,14 +10,28 @@ Function Get-AdsiGroup {
         [Parameter(
             ValueFromPipeline
         )]
-        [string]$Identity
+        [string]$Identity,
+
+        # Return the raw SearchResult
+        [Parameter(
+        )]
+        [switch]$Raw
     )
     begin {
         Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
     }
     process {
         try {
-            Search-ADSI -Category 'group' -Property 'name' -Value $Identity
+            $options = @{
+                Category = 'group'
+                Property = 'name'
+                Value = $Identity
+            }
+            if ($Raw) {
+                Search-ADSI @options
+            } else {
+                Search-ADSI @options | ConvertFrom-SearchResult
+            }
         } catch {
             $PSCmdlet.ThrowTerminatingError($_)
         }

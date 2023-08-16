@@ -37,7 +37,12 @@ function Get-AdsiUser {
         # Filter objects
         [Parameter(
         )]
-        [scriptblock]$Filter
+        [scriptblock]$Filter,
+
+        # Return the raw directory entry object
+        [Parameter(
+        )]
+        [switch]$Raw
     )
     begin {
         Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
@@ -51,26 +56,42 @@ function Get-AdsiUser {
             }
         } else {
             foreach ($id in $Identity) {
+                $options = @{
+                    Category = 'person'
+                    Property = ''
+                    Value    = ''
+                }
                 try {
                     switch -Regex ($id) {
                         '^[0-9a-fA-F]+$' {
                             Write-Debug "  Identity $id given as an objectGUID (hex)"
-                            Search-ADSI -Category 'person' -Property 'samaccountname' -Value $id | Write-Output
+                            $options.Property = 'objectGUID'
                         }
                         '^CN=' {
                             Write-Debug "  Identity $id given was a distinguished name"
-                            Search-ADSI -Category 'person' -Property 'samaccountname' -Value $id | Write-Output
+                            $options.Property = 'dn'
                         }
                         '^S-1-5' {
                             Write-Debug "  Identity $id given was a sid"
-                            Search-ADSI -Category 'person' -Property 'samaccountname' -Value $id | Write-Output
+                            $options.Property = 'objectsid'
+                        }
+                        '.*@.*' {
+                            Write-Debug "  Identity $id given was a user principle name"
+                            $options.Property = 'userprincipalname'
                         }
                         Default {
-                            Write-Debug "  Identity $id given is a samaccountname"
-                            Search-ADSI -Category 'person' -Property 'samaccountname' -Value $id | Write-Output
+                            Write-Debug "  Identity $id given might be a samaccountname"
+                            $options.Property = 'samaccountname'
                         }
-
                     }
+
+                    $options.Value = $id
+                    if ($Raw) {
+                        Search-ADSI @options | Write-Output
+                    } else {
+                        Search-ADSI @options | ConvertFrom-SearchResult | Write-Output
+                    }
+
                 } catch {
                     $PSCmdlet.ThrowTerminatingError($_)
                 }

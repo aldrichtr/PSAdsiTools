@@ -1,4 +1,6 @@
 
+using namespace System.DirectoryServices
+
 function ConvertFrom-PropertyValueCollectionToString {
     <#
     .SYNOPSIS
@@ -25,7 +27,7 @@ function ConvertFrom-PropertyValueCollectionToString {
             Position = 0,
             ValueFromPipeline
         )]
-        [System.DirectoryServices.PropertyValueCollection]$PropertyValueCollection
+        [PropertyValueCollection]$PropertyValueCollection
     )
     begin {
         Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
@@ -33,8 +35,12 @@ function ConvertFrom-PropertyValueCollectionToString {
     process {
         $SubType = & { $PropertyValueCollection.Value.GetType().FullName } 2>$null
         switch ($SubType) {
-            'System.Byte[]' { ConvertTo-DecStringRepresentation -ByteArray $PropertyValueCollection.Value }
-            default { "$($PropertyValueCollection.Value)" }
+            'System.Byte[]' {
+                ConvertTo-DecStringRepresentation -ByteArray $PropertyValueCollection.Value
+            }
+            default {
+                [string]($PropertyValueCollection.Value)
+            }
         }
     }
     end {

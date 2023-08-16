@@ -1,5 +1,9 @@
 
 function Convert-SecurityIdentifier {
+    <#
+    .SYNOPSIS
+        Convert a Security Identifier (SID) from a string to a Byte Array or from a Byte array to a string
+    #>
     [CmdletBinding(
         DefaultParameterSetName = 'toString'
     )]
@@ -7,6 +11,7 @@ function Convert-SecurityIdentifier {
         # The SID data (objectSid) stored in AD
         [Parameter(
             ParameterSetName = 'toString',
+            Position = 0,
             ValueFromPipeline
         )]
         [System.Byte[]]$Byte,
@@ -14,6 +19,7 @@ function Convert-SecurityIdentifier {
         # The string representation of the SID
         [Parameter(
             ParameterSetName = 'toByte',
+            Position = 0,
             ValueFromPipeline
         )]
         [string]$String

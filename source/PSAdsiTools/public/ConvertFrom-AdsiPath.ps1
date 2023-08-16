@@ -15,9 +15,10 @@ function ConvertFrom-AdsiPath {
         Write-Debug "`n$('-' * 80)`n-- Begin $($MyInvocation.MyCommand.Name)`n$('-' * 80)"
     }
     process {
-        Write-Debug "  Converting path $Path"
-        if ($Path -match '^\[?(?<type>\w+)\]?:\/\/') {
-            $type = $Matches[1]
+        Write-Debug "  Converting path '$Path'"
+        $null = $Path -match '^\[?(\w+?)\]?:\/\/'
+        if ($Matches.Count -gt 0) {
+            $type = $Matches.1
             Write-Debug "   Found type $type"
             $Path = $Path -replace "\[?$type\]?:\/\/", ''
             Write-Debug "   Removing type Path is now $Path"

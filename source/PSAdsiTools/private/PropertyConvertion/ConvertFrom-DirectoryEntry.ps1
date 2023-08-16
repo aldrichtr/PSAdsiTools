@@ -28,18 +28,18 @@ function ConvertFrom-DirectoryEntry {
             # This will pull out all of the properties, because they aren't all available
             # unless we do this
             Write-Debug "  Extracting properties of this $($entry.GetType())"
-            $entry_properties = $entry | Select-Object -Property *
+            $entryProperties = $entry | Select-Object -Property *
 
             # Now just the properties that we can read
             Write-Debug "   Getting member properties"
-            $entry_note_properties = $entry_properties |
+            $entryNoteProperties = $entryProperties |
                 Get-Member -MemberType Property, CodeProperty, ScriptProperty, NoteProperty
 
-            $directory_entry = @{
+            $entryObject = @{
                 PSTypeName = 'ADSI.DirectoryEntry'
             }
 
-            foreach ($prop in $entry_note_properties) {
+            foreach ($prop in $entryNoteProperties) {
                 <# Conversion functions need:
                    - the original object (InputObject)
                    - the property we are converting (Property)
@@ -49,15 +49,15 @@ function ConvertFrom-DirectoryEntry {
                 #>
                 Write-Debug "$('.' * 80)`n   Converting $($prop.Name)"
                 $options = @{
-                    InputObject        = $entry_properties
+                    InputObject        = $entryProperties
                     Property           = $prop.Name
-                    PropertyDictionary = $directory_entry
+                    PropertyDictionary = $entryObject
 
                 }
-                $directory_entry = ConvertTo-SimpleProperty @options
+                $entryObject = ConvertTo-SimpleProperty @options
             }
 
-            [PSCustomObject]$directory_entry | Write-Output
+            [PSCustomObject]$entryObject | Write-Output
         }
     }
     end {
